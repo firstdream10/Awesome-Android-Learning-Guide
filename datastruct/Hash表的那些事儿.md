@@ -1,8 +1,21 @@
+Sunday, April 22, 2018
+
+**小伙伴们写的总结：**
+
+1. [Milo 的总结](https://github.com/firstdream10/Awesome-Android-Learning-Guide/blob/master/datastruct/hashtable/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95-%E6%95%A3%E5%88%97%E8%A1%A8_Milo.md)
+2. [shixinzhang的总结](https://github.com/firstdream10/Awesome-Android-Learning-Guide/blob/master/datastruct/hashtable/%E5%93%88%E5%B8%8C%E8%A1%A8_%E5%BC%A0%E6%8B%AD%E5%BF%83.md)
+3. [金鑫的总结](https://github.com/firstdream10/Awesome-Android-Learning-Guide/blob/master/datastruct/hashtable/%E6%95%A3%E5%88%97%E8%A1%A8_%E9%87%91%E9%91%AB.txt)
+4. [Cloud 的总结](https://github.com/firstdream10/Awesome-Android-Learning-Guide/blob/master/datastruct/hashtable/%E5%93%88%E5%B8%8C%E8%A1%A8%E7%9A%84%E5%AE%9E%E7%8E%B0%E3%80%81%E6%80%A7%E8%83%BD%E5%92%8C%E4%BD%BF%E7%94%A8%E5%9C%BA%E6%99%AF_Cloud.md)
+5. [ZHL 的总结](https://github.com/firstdream10/Awesome-Android-Learning-Guide/blob/master/datastruct/hashtable/%E6%95%A3%E5%88%97%E8%A1%A8_ZHL.md)
+6. [杨哲的总结](https://github.com/firstdream10/Awesome-Android-Learning-Guide/blob/master/datastruct/hashtable/%E6%95%A3%E5%88%97%E8%A1%A8%E5%AD%A6%E4%B9%A0__%E6%9D%A8%E5%93%B2.md)
+7. [Alex 赵的总结](https://github.com/firstdream10/Awesome-Android-Learning-Guide/blob/master/datastruct/hashtable/%E5%93%88%E5%B8%8C%E8%A1%A8%E7%9A%84%E7%89%B9%E7%82%B9%EF%BC%8C%E6%80%A7%E8%83%BD%E5%92%8C%E4%BD%BF%E7%94%A8%E5%9C%BA%E6%99%AF_Alex%20%E8%B5%B5.md)
+8. [麦田哥的总结](https://github.com/firstdream10/Awesome-Android-Learning-Guide/blob/master/datastruct/hashtable/%E5%93%88%E5%B8%8C%E8%A1%A8_%E9%BA%A6%E7%94%B0%E5%93%A5.md)
+9. [Anonymous 的总结](https://github.com/firstdream10/Awesome-Android-Learning-Guide/blob/master/datastruct/hashtable/Hash%E8%A1%A8_Anonymous.md)
+10. [Struggle 的总结](https://github.com/firstdream10/Awesome-Android-Learning-Guide/blob/master/datastruct/hashtable/%E6%95%A3%E5%88%97%E8%A1%A8_Struggle.md)
+
 题目：Hash 表的那些事儿
 
 [TOC]
-
-
 
 > 文章出自：[安卓进阶学习指南](https://github.com/iwannabetop/Awesome-Android-Learning-Guide)
 
@@ -28,7 +41,7 @@ Hash 表（哈希表）又称之为散列表，散列表实际上是一种散列
 
 ![](https://ws2.sinaimg.cn/large/006tNc79gy1fqlt9t49m7j30cu01ujr8.jpg)
 
-其中 ![](http://latex.codecogs.com/gif.latex?h%28key%29) 就是这里所说的**散列函数**，对于每个关键码为 $key$ 的元素而言，其通过散列函数计算出散列地址 ![](http://latex.codecogs.com/gif.latex?h%28key%29)，然后将 ![](http://latex.codecogs.com/gif.latex?value) 存储在散列地址上。
+其中 ![](http://latex.codecogs.com/gif.latex?h%28key%29) 就是这里所说的**散列函数**，对于每个关键码为 ![](http://latex.codecogs.com/gif.latex?key) 的元素而言，其通过散列函数计算出散列地址 ![](http://latex.codecogs.com/gif.latex?h%28key%29)，然后将 ![](http://latex.codecogs.com/gif.latex?value) 存储在散列地址上。
 如果两个不相等的关键码 ![](http://latex.codecogs.com/gif.latex?key1) 和 ![](http://latex.codecogs.com/gif.latex?key2)，通过散列函数计算之后得到了相同的散列地址（即 ![](http://latex.codecogs.com/gif.latex?h%28key1%29%20%3D%20h%28key2%29)），这种现象称之为**碰撞**，而发生碰撞的两个关键码称之为**同义词**
 
 散列函数 ![](http://latex.codecogs.com/gif.latex?h%28key%29) 的定义域是整个关键码的集合，![](http://latex.codecogs.com/gif.latex?h%28key%29) 的值域应该是可以使用的整个地址空间，称之为**基本区域**。为了评价散列函数的好坏以及衡量检索的效率还引入了以下两个概念
