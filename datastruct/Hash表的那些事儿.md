@@ -25,6 +25,8 @@
 
 $Hash$ 表（哈希表）又称之为散列表，散列表实际上是一种散列表示的**字典**，那么**字典**是什么呢？**字典**是由一群具有映射关系的元素组成的集合，其中每种元素都包含关键码（Key）和属性（Value）。
 散列表的实质是通过散列函数建立映射关系的数据结构，对于这种映射关系可以用以下公式来进行表示
+
+![](http://latex.codecogs.com/png.latex?key&space;\to&space;value\&space;store\&space;in\&space;h(key))
 $$
 key \to value\ store\ in\ h(key)
 $$
